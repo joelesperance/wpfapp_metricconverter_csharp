@@ -21,6 +21,7 @@ namespace wpfapp_metricconverter_csharp
     public partial class MainWindow : Window
     {
         private readonly int precision = 3;
+        private readonly string placeholder = "0.000";
         public MainWindow()
         {
             InitializeComponent();
@@ -42,21 +43,49 @@ namespace wpfapp_metricconverter_csharp
             CCMil.Text = CalculateCrossCorner(wMil, lMil).ToString();
             StInches.Text = CalculateSteelNumber(hInches, wInches, lInches).ToString();
             StMil.Text = CalculateSteelNumber(hMil, wMil, lMil).ToString();
+
+            WInchesTextBox1.Text = wInches.ToString();
+            WInchesTextBox2.Text = wInches.ToString();
+            WInchesTextBox3.Text = wInches.ToString();
+            WInchesTextBox4.Text = wInches.ToString();
+            LInchesTextBox1.Text = lInches.ToString();
+            LInchesTextBox2.Text = lInches.ToString();
+            LInchesTextBox3.Text = lInches.ToString();
+            LInchesTextBox4.Text = lInches.ToString();
+
+            Cost1.Text = CalculateBGCost(wInches, lInches, Utils.ParseInput(Cents1.Text)).ToString("C");
+            Cost2.Text = CalculateBGCost(wInches, lInches, Utils.ParseInput(Cents2.Text)).ToString("C");
+            Cost3.Text = CalculateBGCost(wInches, lInches, Utils.ParseInput(Cents3.Text)).ToString("C");
+            Cost4.Text = CalculateBGCost(wInches, lInches, Utils.ParseInput(Cents4.Text)).ToString("C");
         }
 
         private void Clear_Click(object sender, RoutedEventArgs e)
         {
-            HMilTextBox.Text = "0";
-            WMilTextBox.Text = "0";
-            LMilTextBox.Text = "0";
-            HInchesTextBox.Text = "0";
-            WInchesTextBox.Text = "0";
-            LInchesTextBox.Text = "0";
-            CCInches.Text = "0";
-            CCMil.Text = "0";
-            StInches.Text = "0";
-            StMil.Text = "0";
+            HMilTextBox.Text = "";
+            WMilTextBox.Text = "";
+            LMilTextBox.Text = "";
+            HInchesTextBox.Text = placeholder;
+            WInchesTextBox.Text = placeholder;
+            LInchesTextBox.Text = placeholder;
+            CCInches.Text = placeholder;
+            CCMil.Text = placeholder;
+            StInches.Text = placeholder;
+            StMil.Text = placeholder;
+            WInchesTextBox1.Text = placeholder;
+            WInchesTextBox2.Text = placeholder;
+            WInchesTextBox3.Text = placeholder;
+            WInchesTextBox4.Text = placeholder;
+            LInchesTextBox1.Text = placeholder;
+            LInchesTextBox2.Text = placeholder;
+            LInchesTextBox3.Text = placeholder;
+            LInchesTextBox4.Text = placeholder;
+            Cost1.Text = "$0.00";
+            Cost2.Text = "$0.00";
+            Cost3.Text = "$0.00";
+            Cost4.Text = "$0.00";
         }
+
+        #region Helper Methods
         private double ConvertToInches(double millimeter)
         {
             double inches = millimeter / 25.4;
@@ -73,5 +102,11 @@ namespace wpfapp_metricconverter_csharp
         {
             return Math.Round(h * w * l * 0.283, precision);
         }
+
+        private double CalculateBGCost(double w, double l, double cents)
+        {
+            return Math.Round(w * l * cents, precision);
+        }
+        #endregion
     }
 }
