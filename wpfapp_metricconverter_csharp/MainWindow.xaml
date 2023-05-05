@@ -12,7 +12,7 @@
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
 
-        <controls:HWL/>
+        <controls:HWL x:Name="hwlControl"/>
         <controls:BGAuto Grid.Row="1"/>
     </Grid>
 </Window>

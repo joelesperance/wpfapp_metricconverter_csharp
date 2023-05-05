@@ -23,15 +23,15 @@
         <Label Content="L" HorizontalAlignment="Center" Margin="0,72,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
 
         <StackPanel Grid.Column="0" Margin="10">
-            <TextBox x:Name="HMil" Height="20"  Margin="5"/>
-            <TextBox x:Name="WMil" Height="20"  Margin="5"/>
-            <TextBox x:Name="LMil" Height="20" Margin="5"/>
+            <TextBox x:Name="HMilTextBox" Height="20"  Margin="5"/>
+            <TextBox x:Name="WMilTextBox" Height="20"  Margin="5"/>
+            <TextBox x:Name="LMilTextBox" Height="20" Margin="5"/>
         </StackPanel>
 
         <StackPanel Grid.Column="1" Margin="10">
-            <TextBox  x:Name="HInches" Height="20" Text="0.000" Margin="5" IsReadOnly="True" Background="Silver"/>
-            <TextBox  x:Name="WInches" Height="20" Text="0.000" Margin="5" IsReadOnly="True" Background="Silver"/>
-            <TextBox  x:Name="LInches" Height="20"  Text="0.000" Margin="5" IsReadOnly="True" Background="Silver"/>
+            <TextBox  x:Name="HInchesTextBox" Height="20" Text="0.000" Margin="5" IsReadOnly="True" Background="Silver"/>
+            <TextBox  x:Name="WInchesTextBox" Height="20" Text="0.000" Margin="5" IsReadOnly="True" Background="Silver"/>
+            <TextBox  x:Name="LInchesTextBox" Height="20"  Text="0.000" Margin="5" IsReadOnly="True" Background="Silver"/>
         </StackPanel>
 
         <StackPanel Name="CrossCorner" Grid.Column="2" Margin="10,10,10,10">

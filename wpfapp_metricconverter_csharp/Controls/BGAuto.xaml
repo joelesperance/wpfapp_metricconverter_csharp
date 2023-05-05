@@ -18,17 +18,17 @@
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
         <Label Grid.ColumnSpan="4" Grid.Row="0" Content="B/G Automatic Entry" HorizontalContentAlignment="Center"/>
-        <StackPanel Grid.Row="1" Grid.Column="0">
-            <TextBox x:Name="WInches1" IsReadOnly="True" Margin="2" Background="Silver"/>
-            <TextBox x:Name="WInches2" IsReadOnly="True" Margin="2" Background="Silver"/>
-            <TextBox x:Name="WInches3" IsReadOnly="True" Margin="2" Background="Silver"/>
-            <TextBox x:Name="WInches4" IsReadOnly="True" Margin="2" Background="Silver"/>
+        <StackPanel x:Name="WInchesStackPanel" Grid.Row="1" Grid.Column="0">
+            <TextBox x:Name="WInchesTextBox1" IsReadOnly="True" Margin="2" Background="Silver"/>
+            <TextBox x:Name="WInchesTextBox2" IsReadOnly="True" Margin="2" Background="Silver"/>
+            <TextBox x:Name="WInchesTextBox3" IsReadOnly="True" Margin="2" Background="Silver"/>
+            <TextBox x:Name="WInchesTextBox4" IsReadOnly="True" Margin="2" Background="Silver"/>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="1">
-            <TextBox x:Name="LInches1" IsReadOnly="True" Margin="2" Background="Silver"/>
-            <TextBox x:Name="LInches2" IsReadOnly="True" Margin="2" Background="Silver"/>
-            <TextBox x:Name="LInches3" IsReadOnly="True" Margin="2" Background="Silver"/>
-            <TextBox x:Name="LInches4" IsReadOnly="True" Margin="2" Background="Silver"/>
+            <TextBox x:Name="LInchesTextBox1" IsReadOnly="True" Margin="2" Background="Silver"/>
+            <TextBox x:Name="LInchesTextBox2" IsReadOnly="True" Margin="2" Background="Silver"/>
+            <TextBox x:Name="LInchesTextBox3" IsReadOnly="True" Margin="2" Background="Silver"/>
+            <TextBox x:Name="LInchesTextBox4" IsReadOnly="True" Margin="2" Background="Silver"/>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="2">
             <TextBox x:Name="Cents1" Text="0.08" Margin="2"/>

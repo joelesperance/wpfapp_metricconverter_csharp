@@ -27,17 +27,17 @@ namespace wpfapp_metricconverter_csharp.Controls
 
         private void Convert_Click(object sender, RoutedEventArgs e)
         {
-            double hMil = Utils.ParseInput(HMil.Text);
-            double wMil = Utils.ParseInput(WMil.Text);
-            double lMil = Utils.ParseInput(LMil.Text);
+            double hMil = Utils.ParseInput(HMilTextBox.Text);
+            double wMil = Utils.ParseInput(WMilTextBox.Text);
+            double lMil = Utils.ParseInput(LMilTextBox.Text);
 
             double hInches = ConvertToInches(hMil);
             double wInches = ConvertToInches(wMil);
             double lInches = ConvertToInches(lMil);
 
-            HInches.Text = hInches.ToString();
-            WInches.Text = wInches.ToString();
-            LInches.Text = lInches.ToString();
+            HInchesTextBox.Text = hInches.ToString();
+            WInchesTextBox.Text = wInches.ToString();
+            LInchesTextBox.Text = lInches.ToString();
             CCInches.Text = CalculateCrossCorner(wInches, lInches).ToString();
             CCMil.Text = CalculateCrossCorner(wMil, lMil).ToString();
             StInches.Text = CalculateSteelNumber(hInches, wInches, lInches).ToString();
@@ -46,12 +46,12 @@ namespace wpfapp_metricconverter_csharp.Controls
 
         private void Clear_Click(object sender, RoutedEventArgs e)
         {
-            HMil.Text = "0";
-            WMil.Text = "0";
-            LMil.Text = "0";
-            HInches.Text = "0";
-            WInches.Text = "0";
-            LInches.Text = "0";
+            HMilTextBox.Text = "0";
+            WMilTextBox.Text = "0";
+            LMilTextBox.Text = "0";
+            HInchesTextBox.Text = "0";
+            WInchesTextBox.Text = "0";
+            LInchesTextBox.Text = "0";
             CCInches.Text = "0";
             CCMil.Text = "0";
             StInches.Text = "0";
