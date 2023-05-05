@@ -24,7 +24,7 @@
             <TextBox x:Name="WInchesTextBox3" IsReadOnly="True" Margin="2" Background="Silver"/>
             <TextBox x:Name="WInchesTextBox4" IsReadOnly="True" Margin="2" Background="Silver"/>
         </StackPanel>
-        <StackPanel Grid.Row="1" Grid.Column="1">
+        <StackPanel x:Name="LInchesStackPanel" Grid.Row="1" Grid.Column="1">
             <TextBox x:Name="LInchesTextBox1" IsReadOnly="True" Margin="2" Background="Silver"/>
             <TextBox x:Name="LInchesTextBox2" IsReadOnly="True" Margin="2" Background="Silver"/>
             <TextBox x:Name="LInchesTextBox3" IsReadOnly="True" Margin="2" Background="Silver"/>
