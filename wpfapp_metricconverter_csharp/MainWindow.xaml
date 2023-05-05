@@ -6,13 +6,92 @@
         xmlns:local="clr-namespace:wpfapp_metricconverter_csharp" xmlns:controls="clr-namespace:wpfapp_metricconverter_csharp.Controls"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Name="Main">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
 
-        <controls:HWL x:Name="hwlControl"/>
-        <controls:BGAuto Grid.Row="1"/>
+        <Grid Name="HWL">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <Label Content="H" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+            <Label Content="W" HorizontalAlignment="Center" Margin="0,41,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+            <Label Content="L" HorizontalAlignment="Center" Margin="0,72,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+
+            <StackPanel Grid.Column="0" Margin="10">
+                <TextBox x:Name="HMilTextBox" Height="20"  Margin="5"/>
+                <TextBox x:Name="WMilTextBox" Height="20"  Margin="5"/>
+                <TextBox x:Name="LMilTextBox" Height="20" Margin="5"/>
+            </StackPanel>
+
+            <StackPanel Grid.Column="1" Margin="10">
+                <TextBox  x:Name="HInchesTextBox" Height="20" Text="0.000" Margin="5" IsReadOnly="True" Background="Silver"/>
+                <TextBox  x:Name="WInchesTextBox" Height="20" Text="0.000" Margin="5" IsReadOnly="True" Background="Silver"/>
+                <TextBox  x:Name="LInchesTextBox" Height="20"  Text="0.000" Margin="5" IsReadOnly="True" Background="Silver"/>
+            </StackPanel>
+
+            <StackPanel Name="CrossCorner" Grid.Column="2" Margin="10,10,10,10">
+                <Label Content="Cross Corner" Margin="0, 4"/>
+                <TextBox x:Name="CCInches" Text="0.000" Margin="5" IsReadOnly="True" Background="Silver"/>
+                <TextBox x:Name="CCMil" Text="0.000" Margin="5" IsReadOnly="True" Background="Silver"/>
+            </StackPanel>
+            <StackPanel Grid.Column="3" Margin="10">
+                <Label Content="Steel #" Margin="0, 4"/>
+                <TextBox x:Name="StInches" Text="0.000" Margin="5" IsReadOnly="True" Background="Silver"/>
+                <TextBox x:Name="StMil" Text="0.000" Margin="5" IsReadOnly="True" Background="Silver"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Center" Margin="0">
+                <Button Click="Convert_Click"  Content="Convert"  Grid.Column="0" Width="150" Margin="0, 0, 5, 0"/>
+                <Button Click="Clear_Click" Content="Clear" Grid.Column="1" Width="150" Margin="5, 0, 0, 0"/>
+            </StackPanel>
+        </Grid>
+        <Grid Name="BGAuto" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Label Grid.ColumnSpan="4" Grid.Row="0" Content="B/G Automatic Entry" HorizontalContentAlignment="Center"/>
+            <StackPanel x:Name="WInchesStackPanel" Grid.Row="1" Grid.Column="0">
+                <TextBox x:Name="WInchesTextBox1" IsReadOnly="True" Margin="2" Background="Silver"/>
+                <TextBox x:Name="WInchesTextBox2" IsReadOnly="True" Margin="2" Background="Silver"/>
+                <TextBox x:Name="WInchesTextBox3" IsReadOnly="True" Margin="2" Background="Silver"/>
+                <TextBox x:Name="WInchesTextBox4" IsReadOnly="True" Margin="2" Background="Silver"/>
+            </StackPanel>
+            <StackPanel x:Name="LInchesStackPanel" Grid.Row="1" Grid.Column="1">
+                <TextBox x:Name="LInchesTextBox1" IsReadOnly="True" Margin="2" Background="Silver"/>
+                <TextBox x:Name="LInchesTextBox2" IsReadOnly="True" Margin="2" Background="Silver"/>
+                <TextBox x:Name="LInchesTextBox3" IsReadOnly="True" Margin="2" Background="Silver"/>
+                <TextBox x:Name="LInchesTextBox4" IsReadOnly="True" Margin="2" Background="Silver"/>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Grid.Column="2">
+                <TextBox x:Name="Cents1" Text="0.08" Margin="2"/>
+                <TextBox x:Name="Cents2" Text="0.10" Margin="2"/>
+                <TextBox x:Name="Cents3" Text="0.16" Margin="2"/>
+                <TextBox x:Name="Cents4" Text="0.18" Margin="2"/>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Grid.Column="3">
+                <TextBox x:Name="Cost1" Text="$00.00" TextAlignment="Right" Margin="2" Background="Silver"/>
+                <TextBox x:Name="Cost2" Text="$00.00" TextAlignment="Right" Margin="2" Background="Silver" />
+                <TextBox x:Name="Cost3" Text="$00.00" TextAlignment="Right" Margin="2" Background="Silver"/>
+                <TextBox x:Name="Cost4" Text="$00.00" TextAlignment="Right" Margin="2" Background="Silver"/>
+            </StackPanel>
+        </Grid>
+        
     </Grid>
 </Window>
