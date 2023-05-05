@@ -20,6 +20,8 @@ namespace wpfapp_metricconverter_csharp.Controls
     /// </summary>
     public partial class HWL : UserControl
     {
+        private int precision = 3;
+       
         public HWL()
         {
             InitializeComponent();
@@ -61,18 +63,18 @@ namespace wpfapp_metricconverter_csharp.Controls
         private double ConvertToInches(double millimeter)
         {
             double inches = millimeter / 25.4;
-            return inches;
+            return Math.Round(inches, precision);
         }
 
         private double CalculateCrossCorner(double w, double l)
         {
             double crosscorner = Math.Sqrt((w * w) + (l * l));
-            return crosscorner;
+            return Math.Round(crosscorner, precision);
         }
 
         private double CalculateSteelNumber(double h, double w, double l)
         {
-            return Math.Round(h * w * l * 0.283, 3);
+            return Math.Round(h * w * l * 0.283, precision);
         }
     }
 }
