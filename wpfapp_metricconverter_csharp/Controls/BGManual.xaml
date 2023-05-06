@@ -18,25 +18,28 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
-        <Label Grid.ColumnSpan="4" Grid.Row="0" Content="B/G Manual Entry" HorizontalContentAlignment="Center"/>
+        <Label Grid.Column="0" Content="W (in)" HorizontalContentAlignment="Center"/>
         <StackPanel Grid.Row="1" Grid.Column="0">
             <TextBox x:Name="WInches1"  Margin="2"/>
             <TextBox x:Name="WInches2" Margin="2"/>
             <TextBox x:Name="WInches3" Margin="2"/>
             <TextBox x:Name="WInches4" Margin="2"/>
         </StackPanel>
+        <Label Grid.Column="1" Content="L (in)" HorizontalContentAlignment="Center"/>
         <StackPanel Grid.Row="1" Grid.Column="1">
             <TextBox x:Name="LInches1" Margin="2"/>
             <TextBox x:Name="LInches2" Margin="2"/>
             <TextBox x:Name="LInches3" Margin="2"/>
             <TextBox x:Name="LInches4" Margin="2"/>
         </StackPanel>
+        <Label Grid.Column="2" Content="Cents" HorizontalContentAlignment="Center"/>
         <StackPanel Grid.Row="1" Grid.Column="2">
             <TextBox x:Name="Cents1" Text="0.28" Margin="2"/>
             <TextBox x:Name="Cents2" Text="0.13" Margin="2"/>
             <TextBox x:Name="Cents3" Text="0.16" Margin="2"/>
             <TextBox x:Name="Cents4" Text="0.25" Margin="2"/>
         </StackPanel>
+        <Label Grid.Column="3" Content="Cost" HorizontalContentAlignment="Center"/>
         <StackPanel Grid.Row="1" Grid.Column="3">
             <TextBox x:Name="Cost1" Text="$0.00" Margin="2" Background="Silver"/>
             <TextBox x:Name="Cost2" Text="$0.00" Margin="2" Background="Silver" />
