@@ -17,5 +17,10 @@ namespace wpfapp_metricconverter_csharp
             }
             return result;
         }
+
+        public static double CalculateBGCost(double w, double l, double cents)
+        {
+            return Math.Round(w * l * cents, 3);
+        }
     }
 }
