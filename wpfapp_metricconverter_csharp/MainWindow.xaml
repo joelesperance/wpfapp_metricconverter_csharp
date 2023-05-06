@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:wpfapp_metricconverter_csharp" xmlns:controls="clr-namespace:wpfapp_metricconverter_csharp.Controls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="410" MinWidth="410">
+        Title="MainWindow" Height="auto" Width="410" MinWidth="410">
     <Grid Name="Main" Background="LightGray">
         <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
@@ -98,7 +99,9 @@
             <TabItem Header="B/G Manual">
                 <controls:BGManual/>
             </TabItem>
+            <TabItem Header="Basic Converter">
+                <controls:BasicConverter Grid.Row="2"/>
+            </TabItem>
         </TabControl>
-
     </Grid>
 </Window>

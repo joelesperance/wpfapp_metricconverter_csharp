@@ -31,6 +31,7 @@ namespace wpfapp_metricconverter_csharp
             double hMil = Utils.ParseInput(HMilTextBox.Text);
             double wMil = Utils.ParseInput(WMilTextBox.Text);
             double lMil = Utils.ParseInput(LMilTextBox.Text);
+            
 
             double hInches = ConvertToInches(hMil);
             double wInches = ConvertToInches(wMil);
@@ -104,5 +105,6 @@ namespace wpfapp_metricconverter_csharp
         }
 
         #endregion
+
     }
 }
