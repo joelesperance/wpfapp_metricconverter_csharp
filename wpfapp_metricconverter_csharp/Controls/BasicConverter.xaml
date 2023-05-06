@@ -27,10 +27,10 @@
         </StackPanel>
         <Label Grid.Column="1" Content="inches" HorizontalContentAlignment="Center"/>
         <StackPanel Grid.Row="1" Grid.Column="1">
-            <TextBox x:Name="inResult1" Text="0.000" Margin="2" Background="Silver"/>
-            <TextBox x:Name="inResult2" Text="0.000" Margin="2" Background="Silver"/>
-            <TextBox x:Name="inResult3" Text="0.000" Margin="2" Background="Silver"/>
-            <TextBox x:Name="inResult4" Text="0.000" Margin="2" Background="Silver"/>
+            <TextBox x:Name="inResult1" Text="0.000" Margin="2" IsReadOnly="True" Background="Silver"/>
+            <TextBox x:Name="inResult2" Text="0.000" Margin="2" IsReadOnly="True" Background="Silver"/>
+            <TextBox x:Name="inResult3" Text="0.000" Margin="2" IsReadOnly="True" Background="Silver"/>
+            <TextBox x:Name="inResult4" Text="0.000" Margin="2" IsReadOnly="True" Background="Silver"/>
         </StackPanel>
         <Label Grid.Column="2" Content="inches" HorizontalContentAlignment="Center"/>
         <StackPanel Grid.Row="1" Grid.Column="2">
@@ -41,10 +41,10 @@
         </StackPanel>
         <Label Grid.Column="3" Content="mm" HorizontalContentAlignment="Center"/>
         <StackPanel Grid.Row="1" Grid.Column="3">
-            <TextBox x:Name="mmResult1" Text="0.000" Margin="2" Background="Silver"/>
-            <TextBox x:Name="mmResult2" Text="0.000" Margin="2" Background="Silver" />
-            <TextBox x:Name="mmResult3" Text="0.000" Margin="2" Background="Silver"/>
-            <TextBox x:Name="mmResult4" Text="0.000" Margin="2" Background="Silver"/>
+            <TextBox x:Name="mmResult1" Text="0.000" Margin="2" IsReadOnly="True" Background="Silver"/>
+            <TextBox x:Name="mmResult2" Text="0.000" Margin="2" IsReadOnly="True" Background="Silver" />
+            <TextBox x:Name="mmResult3" Text="0.000" Margin="2" IsReadOnly="True" Background="Silver"/>
+            <TextBox x:Name="mmResult4" Text="0.000" Margin="2" IsReadOnly="True" Background="Silver"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="4" HorizontalAlignment="Center" Margin="5">
             <Button Click="Calculate_Click" Content="Calculate"  Width="145" Grid.Column="0" Margin="0, 0, 5, 0"/>

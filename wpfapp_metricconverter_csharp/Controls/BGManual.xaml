@@ -41,10 +41,10 @@
         </StackPanel>
         <Label Grid.Column="3" Content="Cost" HorizontalContentAlignment="Center"/>
         <StackPanel Grid.Row="1" Grid.Column="3">
-            <TextBox x:Name="Cost1" Text="$0.00" Margin="2" Background="Silver"/>
-            <TextBox x:Name="Cost2" Text="$0.00" Margin="2" Background="Silver" />
-            <TextBox x:Name="Cost3" Text="$0.00" Margin="2" Background="Silver"/>
-            <TextBox x:Name="Cost4" Text="$0.00" Margin="2" Background="Silver"/>
+            <TextBox x:Name="Cost1" Text="$0.00" Margin="2" IsReadOnly="True" Background="Silver"/>
+            <TextBox x:Name="Cost2" Text="$0.00" Margin="2" IsReadOnly="True" Background="Silver" />
+            <TextBox x:Name="Cost3" Text="$0.00" Margin="2" IsReadOnly="True" Background="Silver"/>
+            <TextBox x:Name="Cost4" Text="$0.00" Margin="2" IsReadOnly="True" Background="Silver"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="4" HorizontalAlignment="Center" Margin="5">
             <Button Click="Calculate_Click" Content="Calculate"  Width="145" Grid.Column="0" Margin="0, 0, 5, 0"/>
