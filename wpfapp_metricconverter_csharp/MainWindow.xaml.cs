@@ -20,7 +20,6 @@ namespace wpfapp_metricconverter_csharp
     /// </summary>
     public partial class MainWindow : Window
     {
-        private readonly int precision = 3;
         private readonly string placeholder = "0.000";
         public MainWindow()
         {

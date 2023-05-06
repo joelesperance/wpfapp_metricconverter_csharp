@@ -31,6 +31,12 @@ namespace wpfapp_metricconverter_csharp
             return Math.Round(inches, precision);
         }
 
+        public static double ConvertToMillimeters(double millimeter)
+        {
+            double inches = millimeter * 25.4;
+            return Math.Round(inches, precision);
+        }
+
         public static double CalculateCrossCorner(double w, double l)
         {
             double crosscorner = Math.Sqrt((w * w) + (l * l));
