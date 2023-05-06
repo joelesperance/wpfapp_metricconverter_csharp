@@ -20,16 +20,16 @@
         </Grid.RowDefinitions>
         <Label Grid.ColumnSpan="4" Grid.Row="0" Content="B/G Manual Entry" HorizontalContentAlignment="Center"/>
         <StackPanel Grid.Row="1" Grid.Column="0">
-            <TextBox x:Name="W1" Margin="2"/>
-            <TextBox x:Name="W2" Margin="2"/>
-            <TextBox x:Name="W3" Margin="2"/>
-            <TextBox x:Name="W4" Margin="2"/>
+            <TextBox x:Name="WInches1" Margin="2"/>
+            <TextBox x:Name="WInches2" Margin="2"/>
+            <TextBox x:Name="WInches3" Margin="2"/>
+            <TextBox x:Name="WInches4" Margin="2"/>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="1">
-            <TextBox x:Name="L1" Margin="2"/>
-            <TextBox x:Name="L2" Margin="2"/>
-            <TextBox x:Name="L3" Margin="2"/>
-            <TextBox x:Name="L4" Margin="2"/>
+            <TextBox x:Name="LInches1" Margin="2"/>
+            <TextBox x:Name="LInches2" Margin="2"/>
+            <TextBox x:Name="LInches3" Margin="2"/>
+            <TextBox x:Name="LInches4" Margin="2"/>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="2">
             <TextBox x:Name="Cents1" Text="0.28" Margin="2"/>
@@ -38,14 +38,14 @@
             <TextBox x:Name="Cents4" Text="0.25" Margin="2"/>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="3">
-            <TextBox x:Name="Result1" Margin="2" Background="Silver"/>
-            <TextBox x:Name="Result2" Margin="2" Background="Silver" />
-            <TextBox x:Name="Result3" Margin="2" Background="Silver"/>
-            <TextBox x:Name="Result4" Margin="2" Background="Silver"/>
+            <TextBox x:Name="Cost1" Margin="2" Background="Silver"/>
+            <TextBox x:Name="Cost2" Margin="2" Background="Silver" />
+            <TextBox x:Name="Cost3" Margin="2" Background="Silver"/>
+            <TextBox x:Name="Cost4" Margin="2" Background="Silver"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="4" HorizontalAlignment="Center" Margin="5">
-            <Button Click="Calculate_Click" Content="Calculate"  Width="150" Grid.Column="0" Margin="0, 0, 5, 0"/>
-            <Button Click="Clear_Click" Content="Clear" Grid.Column="1"  Width="150" Margin="5, 0, 0, 0"/>
+            <Button Click="Calculate_Click" Content="Calculate"  Width="145" Grid.Column="0" Margin="0, 0, 5, 0"/>
+            <Button Click="Clear_Click" Content="Clear" Grid.Column="1"  Width="145" Margin="5, 0, 0, 0"/>
         </StackPanel>
     </Grid>
 </UserControl>

@@ -53,10 +53,10 @@ namespace wpfapp_metricconverter_csharp
             LInchesTextBox3.Text = lInches.ToString();
             LInchesTextBox4.Text = lInches.ToString();
 
-            Cost1.Text = CalculateBGCost(wInches, lInches, Utils.ParseInput(Cents1.Text)).ToString("C");
-            Cost2.Text = CalculateBGCost(wInches, lInches, Utils.ParseInput(Cents2.Text)).ToString("C");
-            Cost3.Text = CalculateBGCost(wInches, lInches, Utils.ParseInput(Cents3.Text)).ToString("C");
-            Cost4.Text = CalculateBGCost(wInches, lInches, Utils.ParseInput(Cents4.Text)).ToString("C");
+            Cost1.Text = Utils.CalculateBGCost(wInches, lInches, Utils.ParseInput(Cents1.Text)).ToString("C");
+            Cost2.Text = Utils.CalculateBGCost(wInches, lInches, Utils.ParseInput(Cents2.Text)).ToString("C");
+            Cost3.Text = Utils.CalculateBGCost(wInches, lInches, Utils.ParseInput(Cents3.Text)).ToString("C");
+            Cost4.Text = Utils.CalculateBGCost(wInches, lInches, Utils.ParseInput(Cents4.Text)).ToString("C");
         }
 
         private void Clear_Click(object sender, RoutedEventArgs e)
@@ -103,10 +103,6 @@ namespace wpfapp_metricconverter_csharp
             return Math.Round(h * w * l * 0.283, precision);
         }
 
-        private double CalculateBGCost(double w, double l, double cents)
-        {
-            return Math.Round(w * l * cents, precision);
-        }
         #endregion
     }
 }

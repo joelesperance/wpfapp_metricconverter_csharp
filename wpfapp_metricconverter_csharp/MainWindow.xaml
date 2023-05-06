@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:wpfapp_metricconverter_csharp" xmlns:controls="clr-namespace:wpfapp_metricconverter_csharp.Controls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid Name="Main">
+        Title="MainWindow" Height="450" Width="410" MinWidth="410">
+    <Grid Name="Main" Background="LightGray">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
@@ -55,43 +55,50 @@
                 <Button Click="Clear_Click" Content="Clear" Grid.Column="1" Width="150" Margin="5, 0, 0, 0"/>
             </StackPanel>
         </Grid>
-        <Grid Name="BGAuto" Grid.Row="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-            </Grid.RowDefinitions>
-            <Label Grid.ColumnSpan="4" Grid.Row="0" Content="B/G Automatic Entry" HorizontalContentAlignment="Center"/>
-            <StackPanel x:Name="WInchesStackPanel" Grid.Row="1" Grid.Column="0">
-                <TextBox x:Name="WInchesTextBox1" IsReadOnly="True" Margin="2" Background="Silver"/>
-                <TextBox x:Name="WInchesTextBox2" IsReadOnly="True" Margin="2" Background="Silver"/>
-                <TextBox x:Name="WInchesTextBox3" IsReadOnly="True" Margin="2" Background="Silver"/>
-                <TextBox x:Name="WInchesTextBox4" IsReadOnly="True" Margin="2" Background="Silver"/>
-            </StackPanel>
-            <StackPanel x:Name="LInchesStackPanel" Grid.Row="1" Grid.Column="1">
-                <TextBox x:Name="LInchesTextBox1" IsReadOnly="True" Margin="2" Background="Silver"/>
-                <TextBox x:Name="LInchesTextBox2" IsReadOnly="True" Margin="2" Background="Silver"/>
-                <TextBox x:Name="LInchesTextBox3" IsReadOnly="True" Margin="2" Background="Silver"/>
-                <TextBox x:Name="LInchesTextBox4" IsReadOnly="True" Margin="2" Background="Silver"/>
-            </StackPanel>
-            <StackPanel Grid.Row="1" Grid.Column="2">
-                <TextBox x:Name="Cents1" Text="0.08" Margin="2"/>
-                <TextBox x:Name="Cents2" Text="0.10" Margin="2"/>
-                <TextBox x:Name="Cents3" Text="0.16" Margin="2"/>
-                <TextBox x:Name="Cents4" Text="0.18" Margin="2"/>
-            </StackPanel>
-            <StackPanel Grid.Row="1" Grid.Column="3">
-                <TextBox x:Name="Cost1" Text="$00.00" TextAlignment="Right" Margin="2" Background="Silver"/>
-                <TextBox x:Name="Cost2" Text="$00.00" TextAlignment="Right" Margin="2" Background="Silver" />
-                <TextBox x:Name="Cost3" Text="$00.00" TextAlignment="Right" Margin="2" Background="Silver"/>
-                <TextBox x:Name="Cost4" Text="$00.00" TextAlignment="Right" Margin="2" Background="Silver"/>
-            </StackPanel>
-        </Grid>
-        
+        <TabControl Name="BGCalcTabs" Grid.Row="1" Width="325" Margin="20">
+            <TabItem Header="B/G Auto">
+                <Grid Name="BGAuto">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.ColumnSpan="4" Grid.Row="0" Content="B/G Automatic Entry" HorizontalContentAlignment="Center"/>
+                    <StackPanel x:Name="WInchesStackPanel" Grid.Row="1" Grid.Column="0">
+                        <TextBox x:Name="WInchesTextBox1" IsReadOnly="True" Margin="2" Background="Silver"/>
+                        <TextBox x:Name="WInchesTextBox2" IsReadOnly="True" Margin="2" Background="Silver"/>
+                        <TextBox x:Name="WInchesTextBox3" IsReadOnly="True" Margin="2" Background="Silver"/>
+                        <TextBox x:Name="WInchesTextBox4" IsReadOnly="True" Margin="2" Background="Silver"/>
+                    </StackPanel>
+                    <StackPanel x:Name="LInchesStackPanel" Grid.Row="1" Grid.Column="1">
+                        <TextBox x:Name="LInchesTextBox1" IsReadOnly="True" Margin="2" Background="Silver"/>
+                        <TextBox x:Name="LInchesTextBox2" IsReadOnly="True" Margin="2" Background="Silver"/>
+                        <TextBox x:Name="LInchesTextBox3" IsReadOnly="True" Margin="2" Background="Silver"/>
+                        <TextBox x:Name="LInchesTextBox4" IsReadOnly="True" Margin="2" Background="Silver"/>
+                    </StackPanel>
+                    <StackPanel Grid.Row="1" Grid.Column="2">
+                        <TextBox x:Name="Cents1" Text="0.08" Margin="2"/>
+                        <TextBox x:Name="Cents2" Text="0.10" Margin="2"/>
+                        <TextBox x:Name="Cents3" Text="0.16" Margin="2"/>
+                        <TextBox x:Name="Cents4" Text="0.18" Margin="2"/>
+                    </StackPanel>
+                    <StackPanel Grid.Row="1" Grid.Column="3">
+                        <TextBox x:Name="Cost1" Text="$0.00" Margin="2" Background="Silver"/>
+                        <TextBox x:Name="Cost2" Text="$0.00" Margin="2" Background="Silver" />
+                        <TextBox x:Name="Cost3" Text="$0.00" Margin="2" Background="Silver"/>
+                        <TextBox x:Name="Cost4" Text="$0.00" Margin="2" Background="Silver"/>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+            <TabItem Header="B/G Manual">
+                <controls:BGManual/>
+            </TabItem>
+        </TabControl>
+
     </Grid>
 </Window>
