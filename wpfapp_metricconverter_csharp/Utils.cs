@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace wpfapp_metricconverter_csharp
 {
@@ -22,7 +18,7 @@ namespace wpfapp_metricconverter_csharp
 
         public static double CalculateBGCost(double w, double l, double cents)
         {
-            return Math.Round(w * l * cents, 3);
+            return Math.Round(w * l * cents);
         }
 
         public static double ConvertToInches(double millimeter)
@@ -46,6 +42,11 @@ namespace wpfapp_metricconverter_csharp
         public static double CalculateSteelNumber(double h, double w, double l)
         {
             return Math.Round(h * w * l * 0.283, precision);
+        }
+
+        public static double Calculate3DTime(double depth, double doc, double loc, double feed)
+        {
+            return Math.Round(((depth / doc) * loc) / feed, precision);
         }
     }
 }

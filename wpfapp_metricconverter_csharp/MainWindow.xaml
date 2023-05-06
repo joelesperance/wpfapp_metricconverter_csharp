@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:wpfapp_metricconverter_csharp" xmlns:controls="clr-namespace:wpfapp_metricconverter_csharp.Controls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" MinHeight="400" Width="450" MinWidth="450">
+        Title="MainWindow" Height="430" MinHeight="430" Width="450" MinWidth="450">
     <Grid Name="Main" Background="LightGray">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
@@ -59,7 +59,7 @@
                 <Button Click="Clear_Click" Content="Clear" Grid.Column="1" Width="150" Margin="5, 0, 0, 0"/>
             </StackPanel>
         </Grid>
-        <TabControl Name="Tabs" Grid.Row="1" TabStripPlacement="Left" Width="415" Margin="0,15,0,0">
+        <TabControl Name="Tabs" Grid.Row="1" TabStripPlacement="Left" Margin="15">
             <TabItem Header="B/G Auto">
                 <Grid Name="BGAuto">
                     <Grid.ColumnDefinitions>
@@ -107,6 +107,13 @@
             </TabItem>
             <TabItem Header="Basic Converter">
                 <controls:BasicConverter Grid.Row="2"/>
+            </TabItem>
+            <TabItem Header="3D Calc">
+                <StackPanel Orientation="Horizontal">
+                <controls:_3DCalc HorizontalAlignment="Left"/>
+                <!--<controls:_3DCalc HorizontalAlignment="Left"/>-->
+                    
+                </StackPanel>
             </TabItem>
         </TabControl>
         
