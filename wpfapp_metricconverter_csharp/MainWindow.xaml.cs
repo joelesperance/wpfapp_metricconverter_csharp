@@ -20,7 +20,6 @@ namespace wpfapp_metricconverter_csharp
     /// </summary>
     public partial class MainWindow : Window
     {
-        private readonly int precision = 3;
         private readonly string placeholder = "0.000";
         public MainWindow()
         {
@@ -31,18 +30,19 @@ namespace wpfapp_metricconverter_csharp
             double hMil = Utils.ParseInput(HMilTextBox.Text);
             double wMil = Utils.ParseInput(WMilTextBox.Text);
             double lMil = Utils.ParseInput(LMilTextBox.Text);
+            
 
-            double hInches = ConvertToInches(hMil);
-            double wInches = ConvertToInches(wMil);
-            double lInches = ConvertToInches(lMil);
+            double hInches = Utils.ConvertToInches(hMil);
+            double wInches = Utils.ConvertToInches(wMil);
+            double lInches = Utils.ConvertToInches(lMil);
 
             HInchesTextBox.Text = hInches.ToString();
             WInchesTextBox.Text = wInches.ToString();
             LInchesTextBox.Text = lInches.ToString();
-            CCInches.Text = CalculateCrossCorner(wInches, lInches).ToString();
-            CCMil.Text = CalculateCrossCorner(wMil, lMil).ToString();
-            StInches.Text = CalculateSteelNumber(hInches, wInches, lInches).ToString();
-            StMil.Text = CalculateSteelNumber(hMil, wMil, lMil).ToString();
+            CCInches.Text = Utils.CalculateCrossCorner(wInches, lInches).ToString();
+            CCMil.Text = Utils.CalculateCrossCorner(wMil, lMil).ToString();
+            StInches.Text = Utils.CalculateSteelNumber(hInches, wInches, lInches).ToString();
+            StMil.Text = Utils.CalculateSteelNumber(hMil, wMil, lMil).ToString();
 
             WInchesTextBox1.Text = wInches.ToString();
             WInchesTextBox2.Text = wInches.ToString();
@@ -84,25 +84,5 @@ namespace wpfapp_metricconverter_csharp
             Cost3.Text = "$0.00";
             Cost4.Text = "$0.00";
         }
-
-        #region Helper Methods
-        private double ConvertToInches(double millimeter)
-        {
-            double inches = millimeter / 25.4;
-            return Math.Round(inches, precision);
-        }
-
-        private double CalculateCrossCorner(double w, double l)
-        {
-            double crosscorner = Math.Sqrt((w * w) + (l * l));
-            return Math.Round(crosscorner, precision);
-        }
-
-        private double CalculateSteelNumber(double h, double w, double l)
-        {
-            return Math.Round(h * w * l * 0.283, precision);
-        }
-
-        #endregion
     }
 }
