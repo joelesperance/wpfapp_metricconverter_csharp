@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace wpfapp_metricconverter_csharp
 {
-    public class Utils
+    public static class Utils
     {
+        private static readonly int precision = 3;
+
         public static double ParseInput(string input)
         {
             double result;
@@ -21,6 +23,23 @@ namespace wpfapp_metricconverter_csharp
         public static double CalculateBGCost(double w, double l, double cents)
         {
             return Math.Round(w * l * cents, 3);
+        }
+
+        public static double ConvertToInches(double millimeter)
+        {
+            double inches = millimeter / 25.4;
+            return Math.Round(inches, precision);
+        }
+
+        public static double CalculateCrossCorner(double w, double l)
+        {
+            double crosscorner = Math.Sqrt((w * w) + (l * l));
+            return Math.Round(crosscorner, precision);
+        }
+
+        public static double CalculateSteelNumber(double h, double w, double l)
+        {
+            return Math.Round(h * w * l * 0.283, precision);
         }
     }
 }
