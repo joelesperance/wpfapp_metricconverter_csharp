@@ -17,9 +17,10 @@
 
                 <Grid Name="HWL">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width=".25*"/>
+                        <ColumnDefinition Width=".25*"/>
+                        <ColumnDefinition Width=".25*"/>
+                        <ColumnDefinition Width=".25*"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
@@ -57,54 +58,54 @@
                         <TextBox x:Name="StInches" Text="0.000" Margin="5,0,5,5" IsReadOnly="True" Background="Silver"/>
                         <TextBox x:Name="StMil" Text="0.000" Margin="5" IsReadOnly="True" Background="Silver"/>
                     </StackPanel>
+                    <Grid Name="BGAuto" Grid.Column="4" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <Label Grid.Row="0" Grid.ColumnSpan="4" Content="B/G Automatic Entry" HorizontalContentAlignment="Center" Padding="0"/>
+                        <Label Grid.Row="1" Content="W (in)" Width="70" HorizontalContentAlignment="Center"/>
+                        <StackPanel x:Name="WInchesStackPanel" Grid.Row="2" Grid.Column="0" Width="70" >
+                            <TextBox x:Name="WInchesTextBox1" Text="0.000" IsReadOnly="True" Margin="2" Background="Silver"/>
+                            <TextBox x:Name="WInchesTextBox2" Text="0.000" IsReadOnly="True" Margin="2" Background="Silver"/>
+                            <TextBox x:Name="WInchesTextBox3" Text="0.000" IsReadOnly="True" Margin="2" Background="Silver"/>
+                            <TextBox x:Name="WInchesTextBox4" Text="0.000" IsReadOnly="True" Margin="2" Background="Silver"/>
+                        </StackPanel>
+                        <Label Grid.Column="1" Grid.Row="1" Content="L (in)" Width="70" HorizontalContentAlignment="Center"/>
+                        <StackPanel x:Name="LInchesStackPanel" Grid.Row="2" Grid.Column="1" Width="70" >
+                            <TextBox x:Name="LInchesTextBox1" Text="0.000" IsReadOnly="True" Margin="2" Background="Silver"/>
+                            <TextBox x:Name="LInchesTextBox2" Text="0.000" IsReadOnly="True" Margin="2" Background="Silver"/>
+                            <TextBox x:Name="LInchesTextBox3" Text="0.000" IsReadOnly="True" Margin="2" Background="Silver"/>
+                            <TextBox x:Name="LInchesTextBox4" Text="0.000" IsReadOnly="True" Margin="2" Background="Silver"/>
+                        </StackPanel>
+                        <Label Grid.Column="2" Grid.Row="1" Content="Cents" Width="70" HorizontalContentAlignment="Center"/>
+                        <StackPanel Grid.Row="2" Grid.Column="2" Width="70" >
+                            <TextBox x:Name="Cents1" Text="0.08" Margin="2"/>
+                            <TextBox x:Name="Cents2" Text="0.10" Margin="2"/>
+                            <TextBox x:Name="Cents3" Text="0.16" Margin="2"/>
+                            <TextBox x:Name="Cents4" Text="0.18" Margin="2"/>
+                        </StackPanel>
+                        <Label Grid.Column="3" Grid.Row="1" Content="Cost" Width="70" HorizontalContentAlignment="Center"/>
+                        <StackPanel Grid.Row="2" Grid.Column="3" Width="70" >
+                            <TextBox x:Name="Cost1" Text="$0.00" Margin="2" IsReadOnly="True" Background="Silver"/>
+                            <TextBox x:Name="Cost2" Text="$0.00" Margin="2" IsReadOnly="True" Background="Silver" />
+                            <TextBox x:Name="Cost3" Text="$0.00" Margin="2" IsReadOnly="True" Background="Silver"/>
+                            <TextBox x:Name="Cost4" Text="$0.00" Margin="2" IsReadOnly="True" Background="Silver"/>
+                        </StackPanel>
+                    </Grid>
                     <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Center" Margin="0">
                         <Button Click="Convert_Click"  Content="Convert"  Grid.Column="0" Width="150" Margin="0, 0, 5, 0" IsDefault="True"/>
                         <Button Click="Clear_Click" Content="Clear" Grid.Column="1" Width="150" Margin="5, 0, 0, 0"/>
                     </StackPanel>
                 </Grid>
-                <TabControl Name="Tabs" Grid.Row="1" TabStripPlacement="Left" Margin="15">
-                    <TabItem Header="B/G Auto">
-                        <Grid Name="BGAuto">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="auto"/>
-                                <RowDefinition Height="auto"/>
-                            </Grid.RowDefinitions>
-                            <Label Grid.Row="0" Content="W (in)" HorizontalContentAlignment="Center"/>
-                            <StackPanel x:Name="WInchesStackPanel" Grid.Row="1" Grid.Column="0">
-                                <TextBox x:Name="WInchesTextBox1" Text="0.000" IsReadOnly="True" Margin="2" Background="Silver"/>
-                                <TextBox x:Name="WInchesTextBox2" Text="0.000" IsReadOnly="True" Margin="2" Background="Silver"/>
-                                <TextBox x:Name="WInchesTextBox3" Text="0.000" IsReadOnly="True" Margin="2" Background="Silver"/>
-                                <TextBox x:Name="WInchesTextBox4" Text="0.000" IsReadOnly="True" Margin="2" Background="Silver"/>
-                            </StackPanel>
-                            <Label Grid.Column="1" Content="L (in)" HorizontalContentAlignment="Center"/>
-                            <StackPanel x:Name="LInchesStackPanel" Grid.Row="1" Grid.Column="1">
-                                <TextBox x:Name="LInchesTextBox1" Text="0.000" IsReadOnly="True" Margin="2" Background="Silver"/>
-                                <TextBox x:Name="LInchesTextBox2" Text="0.000" IsReadOnly="True" Margin="2" Background="Silver"/>
-                                <TextBox x:Name="LInchesTextBox3" Text="0.000" IsReadOnly="True" Margin="2" Background="Silver"/>
-                                <TextBox x:Name="LInchesTextBox4" Text="0.000" IsReadOnly="True" Margin="2" Background="Silver"/>
-                            </StackPanel>
-                            <Label Grid.Column="2" Content="Cents" HorizontalContentAlignment="Center"/>
-                            <StackPanel Grid.Row="1" Grid.Column="2">
-                                <TextBox x:Name="Cents1" Text="0.08" Margin="2"/>
-                                <TextBox x:Name="Cents2" Text="0.10" Margin="2"/>
-                                <TextBox x:Name="Cents3" Text="0.16" Margin="2"/>
-                                <TextBox x:Name="Cents4" Text="0.18" Margin="2"/>
-                            </StackPanel>
-                            <Label Grid.Column="3" Content="Cost" HorizontalContentAlignment="Center"/>
-                            <StackPanel Grid.Row="1" Grid.Column="3">
-                                <TextBox x:Name="Cost1" Text="$0.00" Margin="2" IsReadOnly="True" Background="Silver"/>
-                                <TextBox x:Name="Cost2" Text="$0.00" Margin="2" IsReadOnly="True" Background="Silver" />
-                                <TextBox x:Name="Cost3" Text="$0.00" Margin="2" IsReadOnly="True" Background="Silver"/>
-                                <TextBox x:Name="Cost4" Text="$0.00" Margin="2" IsReadOnly="True" Background="Silver"/>
-                            </StackPanel>
-                        </Grid>
-                    </TabItem>
+                <TabControl Name="Tabs" Grid.Row="1" TabStripPlacement="Left" Margin="15" Width="600">
                     <TabItem Header="B/G Manual">
                         <controls:BGManual/>
                     </TabItem>
@@ -118,9 +119,11 @@
 
             </Grid>
         </TabItem>
+        
         <TabItem Header="Hours">
             <controls:Hours/>
         </TabItem>
+        
     </TabControl>
 
 </Window>

@@ -18,7 +18,7 @@ namespace wpfapp_metricconverter_csharp
 
         public static double CalculateBGCost(double w, double l, double cents)
         {
-            return Math.Round(w * l * cents);
+            return w * l * cents;
         }
 
         public static double ConvertToInches(double millimeter)
