@@ -1,0 +1,294 @@
+﻿<UserControl x:Class="wpfapp_metricconverter_csharp.Controls.Hours"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:wpfapp_metricconverter_csharp.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="QTY" Grid.Column="0" Grid.Row="0" Padding="0" Margin="2,8"/>
+        <TextBox Grid.Column="0" Grid.Row="1" Margin="2,8"/>
+        <TextBox Grid.Column="0" Grid.Row="2" Margin="2,8"/>
+        <TextBox Grid.Column="0" Grid.Row="3" Margin="2,8"/>
+        <TextBox Grid.Column="0" Grid.Row="4" Margin="2,8"/>
+        <TextBox Grid.Column="0" Grid.Row="5" Margin="2,8"/>
+        <TextBox Grid.Column="0" Grid.Row="6" Margin="2,8"/>
+        <TextBox Grid.Column="0" Grid.Row="7" Margin="2,8"/>
+        <TextBox Grid.Column="0" Grid.Row="8" Margin="2,8"/>
+        <TextBox Grid.Column="0" Grid.Row="9" Margin="2,8"/>
+        <TextBox Grid.Column="0" Grid.Row="10" Margin="2,8"/>
+        <TextBox Grid.Column="0" Grid.Row="11" Margin="2,8"/>
+
+        <TextBox Grid.Column="1" Grid.Row="1" Margin="2,8"/>
+        <TextBox Grid.Column="1" Grid.Row="2" Margin="2,8"/>
+        <TextBox Grid.Column="1" Grid.Row="3" Margin="2,8"/>
+        <TextBox Grid.Column="1" Grid.Row="4" Margin="2,8"/>
+        <TextBox Grid.Column="1" Grid.Row="5" Margin="2,8"/>
+        <TextBox Grid.Column="1" Grid.Row="6" Margin="2,8"/>
+        <TextBox Grid.Column="1" Grid.Row="7" Margin="2,8"/>
+        <TextBox Grid.Column="1" Grid.Row="8" Margin="2,8"/>
+        <TextBox Grid.Column="1" Grid.Row="9" Margin="2,8"/>
+        <TextBox Grid.Column="1" Grid.Row="10" Margin="2,8"/>
+        <TextBox Grid.Column="1" Grid.Row="11" Margin="2,8"/>
+
+        <Label Content="HAAS" Grid.Column="2" Grid.Row="0" Padding="0" Margin="2,8"/>
+        <TextBox Grid.Column="2" Grid.Row="1" Margin="2,8"/>
+        <TextBox Grid.Column="2" Grid.Row="2" Margin="2,8"/>
+        <TextBox Grid.Column="2" Grid.Row="3" Margin="2,8"/>
+        <TextBox Grid.Column="2" Grid.Row="4" Margin="2,8"/>
+        <TextBox Grid.Column="2" Grid.Row="5" Margin="2,8"/>
+        <TextBox Grid.Column="2" Grid.Row="6" Margin="2,8"/>
+        <TextBox Grid.Column="2" Grid.Row="7" Margin="2,8"/>
+        <TextBox Grid.Column="2" Grid.Row="8" Margin="2,8"/>
+        <TextBox Grid.Column="2" Grid.Row="9" Margin="2,8"/>
+        <TextBox Grid.Column="2" Grid.Row="10" Margin="2,8"/>
+        <TextBox Grid.Column="2" Grid.Row="11" Margin="2,8"/>
+
+
+        <Label Content="Hours" Grid.Column="3" Grid.Row="0" Padding="0" Margin="2,8"/>
+        <TextBox Grid.Column="3" Grid.Row="1" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="3" Grid.Row="2" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="3" Grid.Row="3" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="3" Grid.Row="4" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="3" Grid.Row="5" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="3" Grid.Row="6" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="3" Grid.Row="7" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="3" Grid.Row="8" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="3" Grid.Row="9" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="3" Grid.Row="10" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="3" Grid.Row="11" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+
+        <Label Content="Mill" Grid.Column="4" Grid.Row="0" Padding="0" Margin="2,8"/>
+        <TextBox Grid.Column="4" Grid.Row="1" Margin="2,8"/>
+        <TextBox Grid.Column="4" Grid.Row="2" Margin="2,8"/>
+        <TextBox Grid.Column="4" Grid.Row="3" Margin="2,8"/>
+        <TextBox Grid.Column="4" Grid.Row="4" Margin="2,8"/>
+        <TextBox Grid.Column="4" Grid.Row="5" Margin="2,8"/>
+        <TextBox Grid.Column="4" Grid.Row="6" Margin="2,8"/>
+        <TextBox Grid.Column="4" Grid.Row="7" Margin="2,8"/>
+        <TextBox Grid.Column="4" Grid.Row="8" Margin="2,8"/>
+        <TextBox Grid.Column="4" Grid.Row="9" Margin="2,8"/>
+        <TextBox Grid.Column="4" Grid.Row="10" Margin="2,8"/>
+        <TextBox Grid.Column="4" Grid.Row="11" Margin="2,8"/>
+        
+        <Label Content="Hours" Grid.Column="5" Grid.Row="0" Padding="0" Margin="2,8"/>
+        <TextBox Grid.Column="5" Grid.Row="1" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="5" Grid.Row="2" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="5" Grid.Row="3" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="5" Grid.Row="4" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="5" Grid.Row="5" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="5" Grid.Row="6" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="5" Grid.Row="7" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="5" Grid.Row="8" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="5" Grid.Row="9" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="5" Grid.Row="10" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="5" Grid.Row="11" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+
+        <Label Content="B/M" Grid.Column="6" Grid.Row="0" Padding="0" Margin="2,8"/>
+        <TextBox Grid.Column="6" Grid.Row="1" Margin="2,8"/>
+        <TextBox Grid.Column="6" Grid.Row="2" Margin="2,8"/>
+        <TextBox Grid.Column="6" Grid.Row="3" Margin="2,8"/>
+        <TextBox Grid.Column="6" Grid.Row="4" Margin="2,8"/>
+        <TextBox Grid.Column="6" Grid.Row="5" Margin="2,8"/>
+        <TextBox Grid.Column="6" Grid.Row="6" Margin="2,8"/>
+        <TextBox Grid.Column="6" Grid.Row="7" Margin="2,8"/>
+        <TextBox Grid.Column="6" Grid.Row="8" Margin="2,8"/>
+        <TextBox Grid.Column="6" Grid.Row="9" Margin="2,8"/>
+        <TextBox Grid.Column="6" Grid.Row="10" Margin="2,8"/>
+        <TextBox Grid.Column="6" Grid.Row="11" Margin="2,8"/>
+
+        <Label Content="Hours" Grid.Column="7" Grid.Row="0" Padding="0" Margin="2,8"/>
+        <TextBox Grid.Column="7" Grid.Row="1" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="7" Grid.Row="2" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="7" Grid.Row="3" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="7" Grid.Row="4" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="7" Grid.Row="5" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="7" Grid.Row="6" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="7" Grid.Row="7" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="7" Grid.Row="8" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="7" Grid.Row="9" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="7" Grid.Row="10" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="7" Grid.Row="11" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+
+        <Label Content="5L" Grid.Column="8" Grid.Row="0" Padding="0" Margin="2,8"/>
+        <TextBox Grid.Column="8" Grid.Row="1" Margin="2,8"/>
+        <TextBox Grid.Column="8" Grid.Row="2" Margin="2,8"/>
+        <TextBox Grid.Column="8" Grid.Row="3" Margin="2,8"/>
+        <TextBox Grid.Column="8" Grid.Row="4" Margin="2,8"/>
+        <TextBox Grid.Column="8" Grid.Row="5" Margin="2,8"/>
+        <TextBox Grid.Column="8" Grid.Row="6" Margin="2,8"/>
+        <TextBox Grid.Column="8" Grid.Row="7" Margin="2,8"/>
+        <TextBox Grid.Column="8" Grid.Row="8" Margin="2,8"/>
+        <TextBox Grid.Column="8" Grid.Row="9" Margin="2,8"/>
+        <TextBox Grid.Column="8" Grid.Row="10" Margin="2,8"/>
+        <TextBox Grid.Column="8" Grid.Row="11" Margin="2,8"/>
+
+        <Label Content="Hours" Grid.Column="9" Grid.Row="0" Padding="0" Margin="2,8"/>
+        <TextBox Grid.Column="9" Grid.Row="1" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="9" Grid.Row="2" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="9" Grid.Row="3" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="9" Grid.Row="4" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="9" Grid.Row="5" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="9" Grid.Row="6" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="9" Grid.Row="7" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="9" Grid.Row="8" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="9" Grid.Row="9" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="9" Grid.Row="10" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="9" Grid.Row="11" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+
+        <Label Content="65K" Grid.Column="10" Grid.Row="0" Padding="0" Margin="2,8"/>
+        <TextBox Grid.Column="10" Grid.Row="1" Margin="2,8"/>
+        <TextBox Grid.Column="10" Grid.Row="2" Margin="2,8"/>
+        <TextBox Grid.Column="10" Grid.Row="3" Margin="2,8"/>
+        <TextBox Grid.Column="10" Grid.Row="4" Margin="2,8"/>
+        <TextBox Grid.Column="10" Grid.Row="5" Margin="2,8"/>
+        <TextBox Grid.Column="10" Grid.Row="6" Margin="2,8"/>
+        <TextBox Grid.Column="10" Grid.Row="7" Margin="2,8"/>
+        <TextBox Grid.Column="10" Grid.Row="8" Margin="2,8"/>
+        <TextBox Grid.Column="10" Grid.Row="9" Margin="2,8"/>
+        <TextBox Grid.Column="10" Grid.Row="10" Margin="2,8"/>
+        <TextBox Grid.Column="10" Grid.Row="11" Margin="2,8"/>
+
+        <Label Content="Hours" Grid.Column="11" Grid.Row="0" Padding="0" Margin="2,8"/>
+        <TextBox Grid.Column="11" Grid.Row="1" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="11" Grid.Row="2" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="11" Grid.Row="3" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="11" Grid.Row="4" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="11" Grid.Row="5" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="11" Grid.Row="6" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="11" Grid.Row="7" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="11" Grid.Row="8" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="11" Grid.Row="9" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="11" Grid.Row="10" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="11" Grid.Row="11" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+
+        <Label Content="VTEC" Grid.Column="12" Grid.Row="0" Padding="0" Margin="2,8"/>
+        <TextBox Grid.Column="12" Grid.Row="1" Margin="2,8"/>
+        <TextBox Grid.Column="12" Grid.Row="2" Margin="2,8"/>
+        <TextBox Grid.Column="12" Grid.Row="3" Margin="2,8"/>
+        <TextBox Grid.Column="12" Grid.Row="4" Margin="2,8"/>
+        <TextBox Grid.Column="12" Grid.Row="5" Margin="2,8"/>
+        <TextBox Grid.Column="12" Grid.Row="6" Margin="2,8"/>
+        <TextBox Grid.Column="12" Grid.Row="7" Margin="2,8"/>
+        <TextBox Grid.Column="12" Grid.Row="8" Margin="2,8"/>
+        <TextBox Grid.Column="12" Grid.Row="9" Margin="2,8"/>
+        <TextBox Grid.Column="12" Grid.Row="10" Margin="2,8"/>
+        <TextBox Grid.Column="12" Grid.Row="11" Margin="2,8"/>
+
+        <Label Content="" Grid.Column="13" Grid.Row="0" Padding="0" Margin="2,8"/>
+        <TextBox Grid.Column="13" Grid.Row="1" Margin="2,8"/>
+        <TextBox Grid.Column="13" Grid.Row="2" Margin="2,8"/>
+        <TextBox Grid.Column="13" Grid.Row="3" Margin="2,8"/>
+        <TextBox Grid.Column="13" Grid.Row="4" Margin="2,8"/>
+        <TextBox Grid.Column="13" Grid.Row="5" Margin="2,8"/>
+        <TextBox Grid.Column="13" Grid.Row="6" Margin="2,8"/>
+        <TextBox Grid.Column="13" Grid.Row="7" Margin="2,8"/>
+        <TextBox Grid.Column="13" Grid.Row="8" Margin="2,8"/>
+        <TextBox Grid.Column="13" Grid.Row="9" Margin="2,8"/>
+        <TextBox Grid.Column="13" Grid.Row="10" Margin="2,8"/>
+        <TextBox Grid.Column="13" Grid.Row="11" Margin="2,8"/>
+
+        <Label Content="Hours" Grid.Column="14" Grid.Row="0" Padding="0" Margin="2,8"/>
+        <TextBox Grid.Column="14" Grid.Row="1" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="14" Grid.Row="2" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="14" Grid.Row="3" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="14" Grid.Row="4" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="14" Grid.Row="5" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="14" Grid.Row="6" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="14" Grid.Row="7" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="14" Grid.Row="8" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="14" Grid.Row="9" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="14" Grid.Row="10" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="14" Grid.Row="11" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+
+        <Label Content="Parpas" Grid.Column="15" Grid.Row="0" Padding="0" Margin="2,8"/>
+        <TextBox Grid.Column="15" Grid.Row="1" Margin="2,8"/>
+        <TextBox Grid.Column="15" Grid.Row="2" Margin="2,8"/>
+        <TextBox Grid.Column="15" Grid.Row="3" Margin="2,8"/>
+        <TextBox Grid.Column="15" Grid.Row="4" Margin="2,8"/>
+        <TextBox Grid.Column="15" Grid.Row="5" Margin="2,8"/>
+        <TextBox Grid.Column="15" Grid.Row="6" Margin="2,8"/>
+        <TextBox Grid.Column="15" Grid.Row="7" Margin="2,8"/>
+        <TextBox Grid.Column="15" Grid.Row="8" Margin="2,8"/>
+        <TextBox Grid.Column="15" Grid.Row="9" Margin="2,8"/>
+        <TextBox Grid.Column="15" Grid.Row="10" Margin="2,8"/>
+        <TextBox Grid.Column="15" Grid.Row="11" Margin="2,8"/>
+
+        <Label Content="Hours" Grid.Column="16" Grid.Row="0" Padding="0" Margin="2,8"/>
+        <TextBox Grid.Column="16" Grid.Row="1" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="16" Grid.Row="2" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="16" Grid.Row="3" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="16" Grid.Row="4" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="16" Grid.Row="5" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="16" Grid.Row="6" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="16" Grid.Row="7" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="16" Grid.Row="8" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="16" Grid.Row="9" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="16" Grid.Row="10" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="16" Grid.Row="11" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+
+        <Label Content="FPT" Grid.Column="17" Grid.Row="0" Padding="0" Margin="2,8"/>
+        <TextBox Grid.Column="17" Grid.Row="1" Margin="2,8"/>
+        <TextBox Grid.Column="17" Grid.Row="2" Margin="2,8"/>
+        <TextBox Grid.Column="17" Grid.Row="3" Margin="2,8"/>
+        <TextBox Grid.Column="17" Grid.Row="4" Margin="2,8"/>
+        <TextBox Grid.Column="17" Grid.Row="5" Margin="2,8"/>
+        <TextBox Grid.Column="17" Grid.Row="6" Margin="2,8"/>
+        <TextBox Grid.Column="17" Grid.Row="7" Margin="2,8"/>
+        <TextBox Grid.Column="17" Grid.Row="8" Margin="2,8"/>
+        <TextBox Grid.Column="17" Grid.Row="9" Margin="2,8"/>
+        <TextBox Grid.Column="17" Grid.Row="10" Margin="2,8"/>
+        <TextBox Grid.Column="17" Grid.Row="11" Margin="2,8"/>
+
+        <Label Content="Hours" Grid.Column="18" Grid.Row="0" Padding="0" Margin="2,8"/>
+        <TextBox Grid.Column="18" Grid.Row="1" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="18" Grid.Row="2" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="18" Grid.Row="3" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="18" Grid.Row="4" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="18" Grid.Row="5" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="18" Grid.Row="6" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="18" Grid.Row="7" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="18" Grid.Row="8" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="18" Grid.Row="9" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="18" Grid.Row="10" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+        <TextBox Grid.Column="18" Grid.Row="11" Margin="2,8" IsReadOnly="True" Background="Silver"/>
+    </Grid>
+    
+</UserControl>

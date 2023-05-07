@@ -109,13 +109,8 @@
                 <controls:BasicConverter Grid.Row="2"/>
             </TabItem>
             <TabItem Header="3D Calc">
-                <StackPanel Orientation="Horizontal">
-                <controls:_3DCalc HorizontalAlignment="Left"/>
-                <!--<controls:_3DCalc HorizontalAlignment="Left"/>-->
-                    
-                </StackPanel>
+                <controls:_3DCalc HorizontalAlignment="Left" Loaded="_3DCalc_Loaded"/>
             </TabItem>
         </TabControl>
-        
     </Grid>
 </Window>
